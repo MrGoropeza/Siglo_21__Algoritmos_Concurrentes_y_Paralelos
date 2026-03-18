@@ -1,0 +1,28 @@
+#include <iostream>
+#include <thread>
+#include <string>
+#include <chrono>
+
+using namespace std;
+
+void misaludo(string m, int demora, int veces) {
+    for(int i = 1; i <= veces ; i++){
+        cout << m + "\n";
+        this_thread::sleep_for(chrono::milliseconds(demora));
+    }
+}
+
+int main(){
+    // Creación de hilos con nombres individuales 
+    thread th_1(&misaludo, "Soy A", 100, 10),
+           th_2(&misaludo, "\t\tSoy B ", 150, 15),
+           th_3(&misaludo, "\t\t\t\tSoy C ", 50, 10);
+
+    // Sincronización manual de cada hilo [cite: 16, 256]
+    th_1.join();
+    th_2.join();
+    th_3.join();
+
+    cout << "Fin \n";
+    return 0;
+}
