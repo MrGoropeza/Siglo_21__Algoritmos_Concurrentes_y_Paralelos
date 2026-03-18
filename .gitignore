@@ -1,0 +1,131 @@
+# =========================
+# C++ generic
+# =========================
+
+# Compiled objects and binaries
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.out
+*.app
+*.exe
+*.dll
+*.so
+*.so.*
+*.dylib
+*.a
+*.lib
+*.exp
+*.pdb
+*.idb
+*.ilk
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Debug / profiling artifacts
+*.dSYM/
+*.gcno
+*.gcda
+*.gcov
+*.prof
+*.profraw
+*.profdata
+
+# =========================
+# Build directories
+# =========================
+
+build/
+build-*/
+cmake-build-*/
+out/
+bin/
+lib/
+obj/
+Debug/
+Release/
+
+# =========================
+# CMake
+# =========================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+Makefile
+install_manifest.txt
+
+# =========================
+# Autotools
+# =========================
+
+autom4te.cache/
+aclocal.m4
+compile
+config.guess
+config.log
+config.status
+config.sub
+configure
+libtool
+ltmain.sh
+m4/
+Makefile.in
+
+# =========================
+# Ninja / Meson
+# =========================
+
+.ninja_deps
+.ninja_log
+.ninja_* 
+meson-private/
+meson-logs/
+meson-info/
+
+# =========================
+# IDE / Editor
+# =========================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+*.sln
+*.vcxproj*
+
+# CLion
+cmake-build-debug/
+cmake-build-release/
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+
+# =========================
+# OS artifacts
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs / temp
+# =========================
+
+*.log
+*.tmp
+*.swp
+*.swo
+*~
