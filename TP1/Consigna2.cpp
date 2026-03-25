@@ -52,7 +52,7 @@ int main() {
         cout << "--- Todos los hilos finalizaron exitosamente (Estado: dead) ---" << endl;
     } 
     catch (const exception& e) {
-        // Tratamiento de errores requerido por la rúbrica
+        // Tratamiento de errores
         cerr << "ERROR CRITICO del sistema: " << e.what() << endl;
         return 1;
     }
